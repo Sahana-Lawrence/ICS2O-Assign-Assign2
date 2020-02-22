@@ -7,36 +7,88 @@
     <meta name="author" content="Sahana Lawrence">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean Bartik - Tribute Page</title>
+    
+    <style>
+      body {
+        background-image: url('./images/Programming_Background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+        }
+
+      #myHeader {
+        background-color: teal;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        }
+      
+      .column {
+        float: left;
+        padding: 16px;
+        height: 300px; 
+        }
+
+      .left {
+        width: 75%;
+        }
+      
+      .right {
+        width: 20%;
+        }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        
+      .content {
+        max-width: 1100px;
+        margin: auto;
+        background: white;
+        padding: 10px;
+        }
+    </style>
   </head>
   <body style="font-family:verdana;">
-    <div id="container">
-      <div id="header">
-        <h1 style="text-align:center;border:8px solid teal;;font-size:300%;">Jean Bartik</h1>
+    <h1 id="myHeader" style="border:8px solid teal;;font-size:300%;text-align:center;">Jean Bartik</h1>
+    <h2 class="city" style="color:white;text-align:center;">December 27, 1924 - March 23, 2011</h2>
+    <br>
+    
+    <div class="row">
+      <div class="column left" style="background-color:#dde8ec;text-align:justify">
+        <h2>History</h2>
+        <p>Jean Jennings Bartik was one of the original programmers for the ENIAC computer. Bartik studied mathematics in school then began work at the University of Pennsylvania, first manually calculating ballistics trajectories and then using ENIAC to do so. Bartik and her colleagues developed and codified many of the fundamentals of programming while working on the ENIAC, since it was the first computer of its kind. After her work on ENIAC, Bartik went on to work on BINAC and UNIVAC, and spent time at a variety of technical companies as a writer, manager, engineer and programmer. She spent her later years as a re-al estate agent and died in 2011 from congestive heart failure complications.</p>
       </div>
-        <div id="content">
-          <div class="sidebar primary">
-            <h2 style="text-align:center;">1924 - 2011</h2>
-            <br>
-            <img src="./images/jean_bartik.jpg" alt="Jean Bartik">
-          </div>
-          <br>
-          <div id="main">
-            <h4 style="text-align:center;font-family:courier;">
-              <q>I was told I’d never make it to VP rank because I was too outspoken. Maybe so, but I think men will always find an excuse for keeping women in their ‘place’. So, let’s make that place the executive suite and start more of our own companies.</q>
-            </h4>
-          </div>
-          <br>
-          <div class="sidebar secondary">
-            <h6 style="text-align:center;border:5px solid dodgerblue;font-size:200%;">History</h6>
-            <p>Jean Bartik, born Betty Jean Jennings on December 27, 1924, was one of the original programmers for the ENIAC computer.</p>
-          </div>
-        </div>
-      <div id="footer">
-        <p style="text-align:center;">
-          <a href="https://en.wikipedia.org/wiki/Jean_Bartik">Learn more about Jean Bartik here.</a>
-        </p>
+      <div class="column right" style="background-color:#dde8ec;">
+        <img src="./images/jean_bartik.jpg" alt="Jean Bartik" class="center"style="width:250px;height:300px;">
       </div>
-      <br>
+    </div>
+    
+    <br>
+    
+    <div class="row">
+      <div class="column right" style="background-color:#dde8ec;">
+        <img src="./images/Jean_Bartik.jpg" alt="Jean Bartik" class="center" style="width:250px;height:300px;">
+      </div>
+      <div class="column left" style="background-color:#dde8ec;text-align:justify">
+        <h2>Contributions</h2>
+        <p>Jean Jennings Bartik was one of the original programmers for the ENIAC computer. Bartik studied mathematics in school then began work at the University of Pennsylvania, first manually calculating ballistics trajectories and then using ENIAC to do so. Bartik and her colleagues developed and codified many of the fundamentals of programming while working on the ENIAC, since it was the first computer of its kind. After her work on ENIAC, Bartik went on to work on BINAC and UNIVAC, and spent time at a variety of technical companies as a writer, manager, engineer and programmer. She spent her later years as a re-al estate agent and died in 2011 from congestive heart failure complications.</p>
+      </div>
+    </div>
+   
+    <br>
+    <p style="text-align:center;">
+      <b style="color:white;">
+        <q>I was told I’d never make it to VP rank because I was too outspoken. Maybe so, but I think men will always find an excuse for keeping women in their ‘place’. So, let’s make that place the executive suite and start more of our own companies.</q>
+      </b>
+    </p>
+    <br>
+    <div id="footer">
+      <p style="text-align:center;">
+        <a href="https://en.wikipedia.org/wiki/Jean_Bartik">Learn more about Jean Bartik here.</a>
+      </p>
     </div>
   </body>
 </html>
